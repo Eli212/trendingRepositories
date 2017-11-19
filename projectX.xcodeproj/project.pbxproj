@@ -14,6 +14,8 @@
 		0133F08A1FBDE78A00C4DCC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0133F0881FBDE78A00C4DCC6 /* LaunchScreen.storyboard */; };
 		0133F0951FBDE78A00C4DCC6 /* projectXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133F0941FBDE78A00C4DCC6 /* projectXTests.swift */; };
 		0133F0A01FBDE78A00C4DCC6 /* projectXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133F09F1FBDE78A00C4DCC6 /* projectXUITests.swift */; };
+		017601B81FC1C7EA00A6602D /* repTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017601B71FC1C7EA00A6602D /* repTableViewCell.swift */; };
+		017601BA1FC1E3FC00A6602D /* currentRepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017601B91FC1E3FC00A6602D /* currentRepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,14 @@
 		0133F09B1FBDE78A00C4DCC6 /* projectXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0133F09F1FBDE78A00C4DCC6 /* projectXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectXUITests.swift; sourceTree = "<group>"; };
 		0133F0A11FBDE78B00C4DCC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017601B71FC1C7EA00A6602D /* repTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repTableViewCell.swift; sourceTree = "<group>"; };
+		017601B91FC1E3FC00A6602D /* currentRepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentRepViewController.swift; sourceTree = "<group>"; };
+		017601BB1FC1E5C600A6602D /* fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fork.png; sourceTree = "<group>"; };
+		017601BC1FC1E5C600A6602D /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		017601BD1FC20A0800A6602D /* starWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starWhite.png; sourceTree = "<group>"; };
+		017601BE1FC20A0900A6602D /* forkWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forkWhite.png; sourceTree = "<group>"; };
+		017601BF1FC20B1C00A6602D /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		017601C21FC22CA100A6602D /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		0133F0731FBDE78A00C4DCC6 = {
 			isa = PBXGroup;
 			children = (
+				017601C21FC22CA100A6602D /* README.rtf */,
 				0133F07E1FBDE78A00C4DCC6 /* projectX */,
 				0133F0931FBDE78A00C4DCC6 /* projectXTests */,
 				0133F09E1FBDE78A00C4DCC6 /* projectXUITests */,
@@ -99,10 +110,17 @@
 			children = (
 				0133F07F1FBDE78A00C4DCC6 /* AppDelegate.swift */,
 				0133F0811FBDE78A00C4DCC6 /* ViewController.swift */,
+				017601B71FC1C7EA00A6602D /* repTableViewCell.swift */,
+				017601B91FC1E3FC00A6602D /* currentRepViewController.swift */,
 				0133F0831FBDE78A00C4DCC6 /* Main.storyboard */,
 				0133F0861FBDE78A00C4DCC6 /* Assets.xcassets */,
 				0133F0881FBDE78A00C4DCC6 /* LaunchScreen.storyboard */,
 				0133F08B1FBDE78A00C4DCC6 /* Info.plist */,
+				017601BB1FC1E5C600A6602D /* fork.png */,
+				017601BC1FC1E5C600A6602D /* star.png */,
+				017601BE1FC20A0900A6602D /* forkWhite.png */,
+				017601BD1FC20A0800A6602D /* starWhite.png */,
+				017601BF1FC20B1C00A6602D /* github.png */,
 			);
 			path = projectX;
 			sourceTree = "<group>";
@@ -261,6 +279,8 @@
 			files = (
 				0133F0821FBDE78A00C4DCC6 /* ViewController.swift in Sources */,
 				0133F0801FBDE78A00C4DCC6 /* AppDelegate.swift in Sources */,
+				017601BA1FC1E3FC00A6602D /* currentRepViewController.swift in Sources */,
+				017601B81FC1C7EA00A6602D /* repTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = px.projectX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = px.projectX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
